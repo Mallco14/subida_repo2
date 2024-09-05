@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffe6e6, #ffd1e8, #ffecf7);
+    background-size: 400% 400%;
+    animation: gradient 8s ease infinite;
+    overflow-x: hidden;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    position: relative;
+    z-index: 2;
+}
+
+#message-box {
+    position: relative;
+    z-index: 2;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: #ff6f61;
+}
+
+p {
+    font-size: 1.3rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+.invitation-section {
+    opacity: 0;
+    display: none;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: rgba(255, 245, 240, 0.9);
+    border-radius: 20px;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: opacity 1s ease-in-out;
+}
+
+.invitation-title {
+    font-size: 2.5rem;
+    color: #ff6f61;
+}
+
+.invitation-details {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.romantic-quote {
+    font-size: 1.5rem;
+    color: #ff6f61;
+    margin-top: 20px;
+}
+
+/* Botón personalizado */
+.btn-custom {
+    background-color: #ff6f61;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-custom:hover {
+    background-color: #ff4d4d;
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(255, 105, 97, 0.5);
+}
+
+/* Animación de tulipanes */
+body::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    background: url('tulips.svg') repeat-x;
+    background-size: contain;
+    z-index: 1;
+    opacity: 0.9;
+    animation: moveTulips 25s linear infinite;
+}
+
+@keyframes moveTulips {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 0; }
+}
