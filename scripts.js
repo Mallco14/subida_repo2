@@ -4,7 +4,7 @@ AOS.init({
     once: true,
 });
 
-// Muestra la invitación y mueve el cuadro hacia arriba al hacer clic en el botón
+// Muestra la invitación y aplica animaciones al hacer clic en el botón
 document.querySelector('.btn').addEventListener('click', () => {
     const invitationSection = document.querySelector('.invitation-section');
     
